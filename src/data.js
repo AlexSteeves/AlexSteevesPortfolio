@@ -9,12 +9,12 @@ export const projects = [
     },
     
     {
-      title: "Epic Todo App",
-      subtitle: "React Hooks",
+      title: "Hotel Palace",
+      subtitle: "Hotel Booking Project",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-4.gif",
-      link: "https://reactbootcamp.com",
+        "Helped develope a hotel booking website using React for frontend and PostgreSQL for backend.",
+      image: "./Database_Project.png",
+      link: "hhttps://github.com/MichiasShiferaw/database-proj",
     },
   ];
   
