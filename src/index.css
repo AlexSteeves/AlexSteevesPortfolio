@@ -17,7 +17,7 @@
     }
 
     .nav-text {
-        @apply hover:text-white rounded-3xl hover:rounded-xl transition-all duration-500 ease-linear cursor-pointer
+        @apply hover:text-white rounded-3xl hover:rounded-xl transition-all duration-500 ease-linear cursor-pointer scroll-smooth
     }
   
   

@@ -10,11 +10,21 @@ export const projects = [
     
     {
       title: "Hotel Palace",
-      subtitle: "Hotel Booking Project",
+      subtitle: "React and PostgreSQL",
       description:
-        "Helped develope a hotel booking website using React for frontend and PostgreSQL for backend.",
+        "I actively contributed to the development of a hotel booking website, utilizing React for the frontend and PostgreSQL for the backend.",
       image: "./Database_Project.png",
-      link: "hhttps://github.com/MichiasShiferaw/database-proj",
+      link: "https://github.com/MichiasShiferaw/database-proj",
+    },
+
+
+    {
+      title: "Clarify Smart Mirror",
+      subtitle: "React Native and TypeScript",
+      description:
+        "Developing a ios and android app to interact with my capstone projects smart mirror.",
+      image: "./Clarify_Logo.png",
+      link: "https://github.com/uoClarify"
     },
   ];
   
@@ -22,8 +32,11 @@ export const projects = [
   export const skills = [
     "JavaScript",
     "React",
-    "Next.js",
-    "Node",
+    "Node.js",
+    "mySQL",
+    "TailwindCSS",
+    "C#",
+    "TypeScript",
     "Java",
     
   ];

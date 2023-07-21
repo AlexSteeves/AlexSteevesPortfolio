@@ -7,20 +7,17 @@ export default function About() {
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Hi, I'm Alexander Steeves.
-            <br className="hidden lg:inline-block" />I love to program and
-            learn.
+            <br className="hidden lg:inline-block" />I love to learn.
           </h1>
           <p className="mb-8 leading-relaxed">
-            Welcome to my portfolio. I am a passionate developer interesting in
-            full stack development. Currently persuing a bachelors degree in
-            Computer Engineering.
+          Welcome to my portfolio! I am an enthusiastic developer with a keen interest in full-stack development. Presently, I am pursuing a Bachelor's degree in Computer Engineering.
           </p>
           <div className="flex justify-center">
             <a
               href="#contact"
               className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
             >
-              Work With Me
+              Let's Work
             </a>
             <a
               href="#projects"
@@ -30,16 +27,10 @@ export default function About() {
             </a>
           </div>
         </div>
-
-        
-        
-
-        
       </div>
     </section>
   );
 }
-
 
 /*
 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

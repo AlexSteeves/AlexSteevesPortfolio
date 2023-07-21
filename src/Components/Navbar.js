@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <header className="bg-gray-800 md:sticky top-0 z-10">
+    <header className="bg-gray-800 md:sticky top-0 z-10 snap-center">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a className="title-font font-medium text-white mb-4 md:mb-0">
           <a href="#about" className="ml-3 text-xl">
@@ -32,7 +32,7 @@ export default function Navbar() {
           </a>
 
           <a
-            href="./AlexanderSteevesResume.pdf"
+            href="./AlexSteevesResume.pdf"
             className="mr-5 nav-text"
           >
             <h>Resume</h>
