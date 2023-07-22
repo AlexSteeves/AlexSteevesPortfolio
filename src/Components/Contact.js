@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="contact" className="relative">
       <div className="flex justify-center items-center h-2000 p-10">
         <form
-          netlify
+          
           name="contact"
           className="w-4/5 md:w-1/2 lg:w-1/3 bg-gray-800 p-8 rounded-lg"
         >

@@ -9,17 +9,18 @@
     .sidebar-icon {
       @apply relative flex items-center justify-center 
               h-12 w-12  mx-auto shadow-lg
-              bg-gray-800 
-                hover:text-white
+              bg-gray-800 text-black
+              hover:text-white
               rounded-3xl hover:rounded-xl
-              transition-all duration-500 ease-linear
-              cursor-pointer;
+              transition-all duration-300 ease-linear
+              cursor-pointer hover:bg-button-100;
     }
 
     .nav-text {
         @apply hover:text-white rounded-3xl hover:rounded-xl transition-all duration-500 ease-linear cursor-pointer scroll-smooth
     }
-  
+
+    
   
   
   }
