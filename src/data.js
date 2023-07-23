@@ -2,6 +2,8 @@ import Clarify from './Components/Pictures/Clarify_Logo.png';
 import Database from './Components/Pictures/Database_Project.png';
 import Tailwind from './Components/Pictures/TailWind-Discord-Practice.png';
 
+import { FaReact, FaNodeJs, FaJava, FaPython} from "react-icons/fa";
+import { SiTailwindcss, SiMysql} from "react-icons/si";
 
 export const projects = [
     {
@@ -35,14 +37,39 @@ export const projects = [
   
   
   export const skills = [
-    "JavaScript",
-    "React",
-    "Node.js",
-    "mySQL",
-    "TailwindCSS",
-    "C#",
-    "TypeScript",
-    "Java",
+    {
+      text:  "React",
+      symbol: <FaReact />,
+    },
+    {
+      text: "Tailwind",
+      symbol: <SiTailwindcss />,
+    },
+    {
+      text: "Java",
+      symbol: <FaJava />,
+    },
+    {
+      text: "Node.JS",
+      symbol: <FaNodeJs />,
+    },
+    {
+      text: "mySQL",
+      symbol: <SiMysql />
+    },
+    {
+      text: "Python",
+      symbol: <FaPython />,
+    },
+    {
+      text: "Prolog",
+     
+    },
+   
+   
+    
     
   ];
+
+ 
   
