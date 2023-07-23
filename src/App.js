@@ -9,6 +9,8 @@ import Skills from "./Components/Skills";
 
 
 
+
+
 export default function App() {
   return (
     <main className = "text-gray-400 bg-gray-900 body-font">
@@ -17,6 +19,7 @@ export default function App() {
       <Projects />
       <Skills />
       <Contact />
+      
     </main>
   );
 }

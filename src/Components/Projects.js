@@ -14,13 +14,10 @@ export default function Projects() {
           </h1>
         </div>
 
-
-        <div>
-          <Carousel />
-        </div>
-
-       
       </div>
+      
+      <Carousel />
+
     </section>
   );
 }
