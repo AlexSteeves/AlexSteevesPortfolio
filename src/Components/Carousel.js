@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import { RxDotFilled } from "react-icons/rx";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
-
 import { projects } from "../data";
 
-function Carousel() {
+export default function Carousel() {
   const slides = [
     {
       src: projects[0].image,
@@ -50,9 +49,9 @@ function Carousel() {
           <img
             src={projects[currentIndex].image}
             alt="gallery"
-            className="absolute inset-0 object-contain object-center w-full h-full"
+            className="absolute inset-0 object-contain object-center w-full h-full transition-all "
           />
-          <div className="absolute inset-0 hover:bg-gray-900 opacity-0 hover:opacity-100 border-gray-900 border-5 transition-opacity  object- contain duration-300  bg-gray-800 ">
+          <div className="absolute inset-0 hover:bg-gray-700 opacity-0 hover:opacity-100 border-gray-900 border-5 transition-opacity  object- contain duration-1000  bg-gray-900 ease in">
             <div className="px-8 py-10 relative h-full flex flex-col items-center justify-center text-center text-black">
               <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                 {projects[currentIndex].subtitle}
@@ -74,11 +73,11 @@ function Carousel() {
       </div>
 
       {/* Right Arrow */}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer opacity-80" >
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
 
-      <div className="flex top-4 justify-center py-2">
+      <div className="flex top-1 justify-center py-2 bg-red-900">
         {slides.map((slide, slideIndex) => (
           <div
             key={slideIndex}
@@ -92,8 +91,6 @@ function Carousel() {
     </div>
   );
 }
-
-export default Carousel;
 
 /*
 
