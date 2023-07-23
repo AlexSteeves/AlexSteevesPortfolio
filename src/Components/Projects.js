@@ -1,6 +1,7 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
-import { projects } from "../data";
+
+import Carousel from './Carousel';
 
 export default function Projects() {
   return (
@@ -12,7 +13,21 @@ export default function Projects() {
             Personal Projects
           </h1>
         </div>
-        <div className="flex flex-wrap -m-4 " style = {{height:"300px"}}>
+
+
+        <div>
+          <Carousel />
+        </div>
+
+       
+      </div>
+    </section>
+  );
+}
+
+
+/*
+ <div className="flex flex-wrap -m-4 " style = {{height:"300px"}}>
           {projects.map((project) => (
             <div key={project.image} className="sm:w-1/3 w-full p-4"
             style = {{height:"300px"}} >
@@ -37,7 +52,4 @@ export default function Projects() {
             </div>
           ))}
         </div>
-      </div>
-    </section>
-  );
-}
+*/

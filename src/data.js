@@ -1,10 +1,15 @@
+import Clarify from './Components/Pictures/Clarify_Logo.png';
+import Database from './Components/Pictures/Database_Project.png';
+import Tailwind from './Components/Pictures/TailWind-Discord-Practice.png';
+
+
 export const projects = [
     {
       title: "TailwindCSS Practice",
       subtitle: "Tailwind and React",
       description:
         "Used TailwindCSS and React to replicate discords sidebar",
-      image: "./TailWind-Discord-Practice.png",
+      image: Clarify,
       link: "https://github.com/AlexSteeves/tailwind-practice",
     },
     
@@ -13,7 +18,7 @@ export const projects = [
       subtitle: "React and PostgreSQL",
       description:
         "I actively contributed to the development of a hotel booking website, utilizing React for the frontend and PostgreSQL for the backend.",
-      image: "./Database_Project.png",
+      image: Database,
       link: "https://github.com/MichiasShiferaw/database-proj",
     },
 
@@ -23,7 +28,7 @@ export const projects = [
       subtitle: "React Native and TypeScript",
       description:
         "Developing a ios and android app to interact with my capstone projects smart mirror.",
-      image: "./Clarify_Logo.png",
+      image: Tailwind,
       link: "https://github.com/uoClarify"
     },
   ];
