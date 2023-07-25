@@ -36,7 +36,7 @@ export default function Carousel() {
   };
 
   return (
-    <div className="max-w-[800px] h-[400px] w-full m-auto  my-0 px-4 relative group rounded-xl border-gray-900 border-1">
+    <div className="h-1/2 w-full m-auto  my-0 px-4 relative group rounded-xl border-gray-900 border-1">
    
       <div
         style={{
@@ -52,8 +52,9 @@ export default function Carousel() {
             alt="gallery"
             className="absolute inset-0 object-contain object-center w-full h-full transition-all rounded-xl drop-shadow-sm border-b-gray-900 border-r-1"
           />
-          <div className="absolute inset-0 hover:bg-gray-700 opacity-0 hover:opacity-100 border-gray-900 border-5 transition-opacity  object- contain duration-1000  bg-gray-900 ease in rounded-xl ">
-            <div className="px-8 py-10relative h-full flex flex-col items-center justify-center text-center text-black">
+
+          <div className="absolute inset-0 hover:bg-gray-700 opacity-0 hover:opacity-100 border-gray-900 border-5 transition-opacity  object-contain duration-500  bg-gray-900 ease in rounded-xl ">
+            <div className="px-8 md:py-10 h-contain flex flex-col items-center justify-center text-center text-black">
               <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                 {projects[currentIndex].subtitle}
               </h2>

@@ -6,38 +6,33 @@ import Navbar from "./Components/Navbar";
 import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 
-
-
-
-
-
 export default function App() {
   return (
-    <main className = "text-gray-400 bg-gray-900 body-font snap-y snap-mandatory overflow-y-scroll h-screen w-screen scroll-snap-stop:always ">
-      
-      
-      <Navbar />
+    <main className="text-gray-400 bg-gray-900 snap-y snap-mandatory overscroll-y-none overflow-scroll h-screen w-screen  ">
 
-      <div className ="h-screen w-screen snap-start scroll-snap-stop:always ">
-      <About className = ""/>
+      
+      
+
+      <div className = "fixed h-1/5 w-screen z-10">
+        <Navbar className = ""/>
+
       </div>
 
-      <div className ="h-screen w-screen snap-start scroll-snap-stop:always ">
-      <Projects />
+      <div className="h-screen w-screen snap-start snap-always z-1">
+        <About className="" />
       </div>
 
-      <div className ="h-screen w-screen snap-start scroll-snap-stop:always ">
-      <Skills />
+      <div className="h-screen w-screen snap-start snap-always z-1">
+        <Projects />
       </div>
 
-      <div className ="h-screen w-screen snap-start scroll-snap-stop:always ">
-      <Contact />
+      <div className="h-screen w-screen snap-start snap-always ">
+        <Skills />
       </div>
-      
-      
-      
+
+      <div className="h-screen w-screen snap-start snap-always ">
+        <Contact />
+      </div>
     </main>
   );
 }
-
- 
