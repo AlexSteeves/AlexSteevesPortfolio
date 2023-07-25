@@ -48,7 +48,9 @@ export default function Carousel() {
   return (
     <div className="h-2/3 w-full md:h-1/2 md:w-1/2 m-auto  my-0 px-4 relative group rounded-xl border-gray-900 border-1">
       <div
+      
         style={{
+          height: imageHeight,
           backgroundSize: "contain",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -87,7 +89,7 @@ export default function Carousel() {
         </div>
 
         {/* Right Arrow */}
-        <div className="group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer opacity-80">
+        <div className="group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ">
           <BsChevronCompactRight onClick={nextSlide} size={30} />
         </div>
       </div>
