@@ -66,7 +66,7 @@ export default function Carousel() {
             className="absolute inset-0 object-contain object-center w-full  transition-all rounded-xl drop-shadow-sm border-b-gray-900 border-r-1"
           />
 
-          <div style = {{height: imageHeight}} className="absolute inset-0 hover:bg-gray-700 opacity-0 hover:opacity-100 border-gray-900 border-5 transition-opacity object-contain duration-500 bg-gray-900 ease-in rounded-xl">
+          <div style = {{height: imageHeight}} className="absolute inset-0 hover:bg-gray-700 opacity-0 hover:opacity-100 border-gray-900 border-5 transition-opacity object-contain duration-500 bg-gray-900 ease-in rounded-xl h-fit">
 
 
             <div className="px-8 md:py-10 flex flex-col items-center justify-center text-center text-black h-full">
