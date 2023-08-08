@@ -16,12 +16,10 @@ export default function Navbar() {
             <a href="#projects" className="mr-3 md:mr-5 nav-text">
               Projects
             </a>
-            <a href="#skills" className="mr-3 md:mr-5 nav-text">
+            <a href="#skills" className="mr-3 md:mr-72 nav-text">
               Skills
             </a>
-            <a href="#contact" className="mr-3 md:mr-72 nav-text">
-              Contact Me
-            </a>
+            
 
             <a href="./AlexSteevesResume.pdf" className="mr-3 md:mr-5 nav-text">
               <h>Resume</h>
@@ -52,7 +50,11 @@ const SideBarIcon = ({ icon }) => <div className="sidebar-icon">{icon}</div>;
 
 
 /*
+<a href="#contact" className="mr-3 md:mr-72 nav-text">
+              Contact Me
+            </a>
 
+            
 <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-8 md:border-l md:border-gray-800	flex flex-wrap items-center text-base justify-center ">
             <a href="https://github.com/AlexSteeves" className="mr-5">
               <SideBarIcon icon={<BsGithub size="28" />} />
