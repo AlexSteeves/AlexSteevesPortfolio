@@ -13,7 +13,7 @@ export default function App() {
       
       
 
-      <div className = "fixed h-1/5 w-screen z-10">
+      <div className = "fixed h-1/8 w-screen z-10">
         <Navbar className = ""/>
 
       </div>
@@ -30,9 +30,14 @@ export default function App() {
         <Skills />
       </div>
 
-      <div className="h-screen w-screen snap-start snap-always ">
-        <Contact />
-      </div>
+      
     </main>
   );
 }
+
+/*
+<div className="h-screen w-screen snap-start snap-always ">
+        <Contact />
+      </div>
+
+*/

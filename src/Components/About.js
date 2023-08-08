@@ -3,8 +3,8 @@ import React from "react";
 export default function About() {
   return (
     <section id="about" className="bg-gray-900 w-screen h-screen flex items-center justify-center">
-      <div className=" bg-gray-700 rounded-md  box-border flex  items-center justify-center drop-shadow-xl ">
-        <div className="md:w-2/3 container mx-auto px-10 py-20 md:flex-row flex-col items-center justify-center text-center">
+      <div className=" bg-gray-700 rounded-md  box-border flex  items-center justify-center drop-shadow-xl">
+        <div className="md:w-5/6 container mx-auto px-10 py-20 md:flex-row flex-col items-center justify-center text-center">
           <h1 className="title-font text-xl md:text-3xl md:mb-4 font-medium text-gray-800 text-center">
             Hi, I'm Alexander Steeves.
             <br className="lg:inline-block" />

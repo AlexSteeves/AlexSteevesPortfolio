@@ -4,7 +4,7 @@ import React from "react";
 export default function Navbar() {
   return (
     <header className="bg-gray-1000 sticky top-0 z-10">
-      <div className="container mx-auto flex flex-wrap py-5 md:p-5 flex-col md:flex-row items-center">
+      <div className="container mx-auto flex flex-wrap py-3 md:p-5 flex-col md:flex-row items-center">
         <a
           href="#about"
           className="ml-3 text-lg md:text-xl text-center title-font font-medium text-gray-800 mb-1 md:mb-0 nav-text drop shadow-lg"
@@ -23,6 +23,10 @@ export default function Navbar() {
               Contact Me
             </a>
 
+            <a href="./AlexSteevesResume.pdf" className="mr-3 md:mr-5 nav-text">
+              <h>Resume</h>
+            </a>
+
             
             <a href="https://github.com/AlexSteeves" className=" mr-3 md:mr-5">
               <SideBarIcon icon={<BsGithub size="28" />} />
@@ -35,9 +39,7 @@ export default function Navbar() {
               <SideBarIcon icon={<BsLinkedin size="28" />} />
             </a>
 
-            <a href="./AlexSteevesResume.pdf" className="mr-3 md:mr-5 nav-text">
-              <h>Resume</h>
-            </a>
+            
           </nav>
 
           
