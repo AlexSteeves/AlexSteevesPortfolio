@@ -14,25 +14,28 @@ export default function App() {
       
       
 
-      <div className = "fixed h-1/8 w-screen z-10">
+      <section className = "fixed h-1/8 w-screen z-10">
         <Navbar className = ""/>
 
-      </div>
+      </section>
 
-      <div className="h-screen w-screen snap-start snap-always z-1">
+      <section className="h-screen w-screen snap-start snap-always z-1">
         <About className="" />
-      </div>
+      </section>
 
-      <div className="h-screen w-screen snap-start snap-always z-1">
+      <section className="h-screen w-screen snap-start snap-always z-1">
         <Projects />
-      </div>
+      </section>
 
-      <div className="h-screen w-screen snap-start snap-always ">
+      <section className="h-screen w-screen snap-start snap-always">
         <Skills />
-      </div>
-      <div className="h-1/8 w-screen snap-start snap-always">
+       
+      </section>
+
+
+      <section className="h-1/8 w-screen snap-end snap-always">
         <Footer />
-      </div>
+      </section>
 
       
     </main>

@@ -1,75 +1,178 @@
+import { Fragment } from "react";
+import { Menu, Transition } from "@headlessui/react";
+import { FaChevronDown } from "react-icons/fa";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { useState } from "react";
 import React from "react";
 
-export default function Navbar() {
-  return (
-    <header className="bg-gray-1000 sticky top-0 z-10">
-      <div className="container mx-auto flex flex-wrap py-3 md:p-5 flex-col md:flex-row items-center">
-        <a
-          href="#about"
-          className="ml-3 text-lg md:text-xl text-center title-font font-medium text-gray-800 mb-1 md:mb-0 nav-text drop shadow-lg"
-        >
-          Alexander Steeves
-        </a>
-        
-          <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap md:items-center text-base md:justify-center ">
-            <a href="#projects" className="mr-3 md:mr-5 nav-text">
-              Projects
-            </a>
-            <a href="#skills" className="mr-3 md:mr-72 nav-text">
-              Skills
-            </a>
-            
 
-            <a href="./AlexSteevesResume.pdf" className="mr-3 md:mr-5 nav-text">
-              <h>Resume</h>
-            </a>
 
-            
-            <a href="https://github.com/AlexSteeves" className=" mr-3 md:mr-5">
-              <SideBarIcon icon={<BsGithub size="28" />} />
-            </a>
-
-            <a
-              href="www.linkedin.com/in/alexander-steeves-8122b8178"
-              className="mr-3 md:mr-5 "
-            >
-              <SideBarIcon icon={<BsLinkedin size="28" />} />
-            </a>
-
-            
-          </nav>
-
-          
-      </div>
-    </header>
-  );
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
 }
 
-const SideBarIcon = ({ icon }) => <div className="sidebar-icon">{icon}</div>;
+export const list = [
+  {
+    id: "1",
+    color: "White",
+  },
 
+  {
+    id: "2",
+    color: "#173acb",
+  },
 
-/*
-<a href="#contact" className="mr-3 md:mr-72 nav-text">
-              Contact Me
-            </a>
+  {
+    id: "3",
+    color: "#BFFF00",
+  },
+];
+const getColorById = (idToSearch) => {
+  const item = list.find((item) => item.id === idToSearch);
+  return item ? item.color : null;
+};
 
-            
-<nav className="md:mr-auto md:ml-4 md:py-1 md:pl-8 md:border-l md:border-gray-800	flex flex-wrap items-center text-base justify-center ">
-            <a href="https://github.com/AlexSteeves" className="mr-5">
-              <SideBarIcon icon={<BsGithub size="28" />} />
-            </a>
+const Navbar = (props) => {
+ 
+  const color = getColorById(props.divId);
 
-            <a
-              href="www.linkedin.com/in/alexander-steeves-8122b8178"
-              className="mr-5 "
-            >
-              <SideBarIcon icon={<BsLinkedin size="28" />} />
-            </a>
+  return (
+    <>
+    <div className = "absolute inset-y-0 left-0 ">
+        <a href = "#about">
+        <h1 className = "text-3xl shadow-drop-xl mt-8 ml-12 text-bold text-grey-100"
+        style={{color: color }}>
 
-            <a href="./AlexSteevesResume.pdf" className="mr-5 nav-text">
-              <h>Resume</h>
-            </a>
-          </nav>
+            Alex Steeves
+        </h1>
+        </a>
         
-*/
+    </div>
+    <div className="absolute inset-y-0 right-0">
+      <Menu as="div" className='relative inline-block text-left'>
+        <div className={"mt-5 mr-5"}>
+          <Menu.Button
+            className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-2 py-2 text-sm font-semibold text-gray-900 transition-all duration-700 hover:bg-white"
+            style={{ backgroundColor: color }}
+          
+          >
+            <FaChevronDown
+              className=" h-5 w-5 text-gray-400"
+              aria-hidden="true"
+            />
+          </Menu.Button>
+        </div>
+
+        <Transition
+          as={Fragment}
+          enter="transition ease-out duration-100"
+          enterFrom="transform opacity-0 scale-95"
+          enterTo="transform opacity-100 scale-100"
+          leave="transition ease-in duration-75"
+          leaveFrom="transform opacity-100 scale-100"
+          leaveTo="transform opacity-0 scale-95"
+        >
+          <Menu.Items
+            className="absolute right-0 z-10 mt-1 mr-5 w-56 origin-top-right divide-y divide-gray-500 rounded-md shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none bg-white"
+            style={{ backgroundColor: color }}
+          >
+            <div className="py-1">
+              <Menu.Item>
+                {({ active }) => (
+                  <a
+                    href="#projects"
+                    className={classNames(
+                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      "block px-4 py-2 text-sm"
+                    )}
+                  >
+                    Projects
+                  </a>
+                )}
+              </Menu.Item>
+              <Menu.Item>
+                {({ active }) => (
+                  <a
+                    href="#skills"
+                    className={classNames(
+                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      "block px-4 py-2 text-sm"
+                    )}
+                  >
+                    Skills
+                  </a>
+                )}
+              </Menu.Item>
+              <Menu.Item>
+                {({ active }) => (
+                  <a
+                    href="#contact"
+                    className={classNames(
+                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      "block px-4 py-2 text-sm"
+                    )}
+                  >
+                    Contact
+                  </a>
+                )}
+              </Menu.Item>
+            </div>
+            <div className="py-1">
+
+            <Menu.Item>
+                {({ active }) => (
+                    
+                  <a
+                    href="./AlexSteevesResume.pdf"
+                    className={classNames(
+                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      "block px-4 py-2 text-sm"
+                    )}
+                  >
+                    Resume
+                    
+                   
+                  </a>
+                )}
+              </Menu.Item>
+              <Menu.Item>
+                {({ active }) => (
+                    
+                  <a
+                    href="https://github.com/AlexSteeves?tab=repositories"
+                    className={classNames(
+                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      "block px-4 py-2 text-sm"
+                    )}
+                  >
+                    <BsGithub size="28" />
+                    
+                   
+                  </a>
+                )}
+              </Menu.Item>
+              <Menu.Item>
+                {({ active }) => (
+                  <a
+                    href="https://www.linkedin.com/in/alexander-steeves-8122b8178/"
+                    className={classNames(
+                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      "block px-4 py-2 text-sm"
+                    )}
+                  >
+                   <BsLinkedin size="28" />
+                    
+                  </a>
+                )}
+              </Menu.Item>
+            </div>
+          </Menu.Items>
+        </Transition>
+      </Menu>
+    </div>
+    </>
+    
+  );
+};
+
+export default Navbar;
