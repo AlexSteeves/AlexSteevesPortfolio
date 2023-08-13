@@ -41,7 +41,7 @@ const Navbar = () => {
     <>
     <div className = "absolute inset-y-0 left-0 ">
         <a href = "#about">
-        <h1 className = "text-3xl shadow-drop-xl mt-8 ml-12 text-bold text-grey-100"
+        <h1 className = "text-3xl shadow-drop-xl mt-8 ml-12 text-bold text-grey-100 hover:text-gray-100 transition-all duration-500"
         >
 
             Alex Steeves
@@ -53,12 +53,12 @@ const Navbar = () => {
       <Menu as="div" className='relative inline-block text-left'>
         <div className={"mt-5 mr-5"}>
           <Menu.Button
-            className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-2 py-2 text-sm font-semibold text-gray-900 transition-all duration-700 hover:bg-white"
+            className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-2 py-2 text-sm font-semibold text-gray-900 "
       
           
           >
             <FaChevronDown
-              className=" h-5 w-5 text-gray-400"
+              className=" h-5 w-5 text-gray-400 hover:text-gray-100 transition-all duration-500"
               aria-hidden="true"
             />
           </Menu.Button>
@@ -104,19 +104,10 @@ const Navbar = () => {
                   </a>
                 )}
               </Menu.Item>
-              <Menu.Item>
-                {({ active }) => (
-                  <a
-                    href="#contact"
-                    className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                      "block px-4 py-2 text-sm"
-                    )}
-                  >
-                    Contact
-                  </a>
-                )}
-              </Menu.Item>
+
+              
+             
+              
             </div>
             <div className="py-1">
 
@@ -177,3 +168,23 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+/*
+
+ <Menu.Item>
+                {({ active }) => (
+                  <a
+                    href="#contact"
+                    className={classNames(
+                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      "block px-4 py-2 text-sm"
+                    )}
+                  >
+                    Contact
+                  </a>
+                )}
+              </Menu.Item>
+
+
+*/
