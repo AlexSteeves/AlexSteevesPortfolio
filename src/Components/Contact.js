@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="items-center justify-center flex h-screen ">
+    <section id="contact" className="items-center justify-center flex h-screen bg-contact">
       <div className="flex justify-center items-center h-screen p-10 w-screen pt-50">
         <form
           

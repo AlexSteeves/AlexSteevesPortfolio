@@ -15,6 +15,12 @@ module.exports = {
           100: "#00aba9",
           200: "#00ece9"
         },
+        about: '#242582',
+        contacts: '#F64C72',
+        skills: '#2F2FA2',
+        contact: '#553D67',
+
+        
 
       },
     },

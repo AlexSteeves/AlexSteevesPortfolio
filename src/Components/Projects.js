@@ -5,7 +5,7 @@ import Carousel from './Carousel';
 
 export default function Projects() {
   return (
-    <section id="projects" className="text-gray-800 flex flex-col bg-gray-900 body-font w-screen h-screen items-center justify-center">
+    <section id="projects" className="text-gray-800 flex flex-col bg-contacts body-font w-screen h-screen items-center justify-center">
       <div className="container pt-52 px-5 md:py-5 mx-auto text-center lg:px-40 items-center justify-center">
         <div className="flex flex-col w-full">
           <CodeIcon className="mx-auto inline-block w-10" />
