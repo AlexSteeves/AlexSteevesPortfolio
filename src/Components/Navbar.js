@@ -27,21 +27,22 @@ export const list = [
     color: "#BFFF00",
   },
 ];
+
 const getColorById = (idToSearch) => {
   const item = list.find((item) => item.id === idToSearch);
-  return item ? item.color : null;
+  return item ? item.color : null; 
 };
 
-const Navbar = (props) => {
+const Navbar = () => {
  
-  const color = getColorById(props.divId);
+  /*const color = getColorById(props.divId); */
 
   return (
     <>
     <div className = "absolute inset-y-0 left-0 ">
         <a href = "#about">
         <h1 className = "text-3xl shadow-drop-xl mt-8 ml-12 text-bold text-grey-100"
-        style={{color: color }}>
+        >
 
             Alex Steeves
         </h1>
@@ -53,7 +54,7 @@ const Navbar = (props) => {
         <div className={"mt-5 mr-5"}>
           <Menu.Button
             className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-2 py-2 text-sm font-semibold text-gray-900 transition-all duration-700 hover:bg-white"
-            style={{ backgroundColor: color }}
+      
           
           >
             <FaChevronDown
@@ -74,7 +75,7 @@ const Navbar = (props) => {
         >
           <Menu.Items
             className="absolute right-0 z-10 mt-1 mr-5 w-56 origin-top-right divide-y divide-gray-500 rounded-md shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none bg-white"
-            style={{ backgroundColor: color }}
+            
           >
             <div className="py-1">
               <Menu.Item>
