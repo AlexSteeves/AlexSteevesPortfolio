@@ -15,8 +15,11 @@ export default function Projects() {
         </div>
 
       </div>
+    
+
+        <Carousel />
       
-      <Carousel />
+      
 
     </section>
   );

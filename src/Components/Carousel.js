@@ -35,41 +35,17 @@ export default function Carousel() {
     setCurrentIndex(slideIndex);
   };
 
-  const [imageHeight, setImageHeight] = useState(0);
-  const imageRef = useRef(null);
-
-  useEffect(() => {
-    // Get the height of the image after it has loaded
-    if (imageRef.current) {
-      setImageHeight(imageRef.current.clientHeight);
-    }
-  }, [currentIndex]);
-
   return (
-    <div className="h-2/3 w-full md:h-1/2 md:w-1/2 m-auto  my-0 px-4 relative group rounded-xl border-gray-900 border-1">
-      <div
-      
-        style={{
-          height: imageHeight,
-          backgroundSize: "contain",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-        className="rounded-xl transition-all duration-500"
-      >
-        <a href={projects[currentIndex].link}>
+    <section className="w-fit mx-auto rounded-xl border-gray-900 ">
+      <div className="w-50% h-fit group">
+        <div className="relative overflow-hidden">
           <img
-            ref={imageRef}
             src={projects[currentIndex].image}
             alt="gallery"
-            className="absolute inset-0 object-contain object-center w-full  transition-all rounded-xl drop-shadow-sm border-b-gray-900 border-r-1"
+            className="h-96 w-full object-cover"
           />
-
-          <div
-            style={{ height: imageHeight }}
-            className="absolute inset-0 hover:bg-gray-700 opacity-0 hover:opacity-100 border-gray-900 border-5 transition-opacity object-contain duration-500 bg-gray-900 ease-in rounded-xl h-fit"
-          >
-            <div className="px-8 md:py-10 flex flex-col items-center justify-center text-center text-black h-full">
+          <a href={projects[currentIndex].link}>
+            <div className="absolute h-full w-full bg-gray-900 flex flex-col items-center justify-center group-hover:bottom-0 group-hover:opacity-95 opacity-0 transition-all duration-500 text-center">
               <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                 {projects[currentIndex].subtitle}
               </h2>
@@ -80,24 +56,20 @@ export default function Carousel() {
                 {projects[currentIndex].description}
               </p>
             </div>
+          </a>
+
+          <div className="group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+            <BsChevronCompactLeft onClick={previousSlide} size={30} />
           </div>
-        </a>
 
-        {/* Left Arrow */}
-        <div className=" group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-          <BsChevronCompactLeft onClick={previousSlide} size={30} />
-        </div>
-
-        {/* Right Arrow */}
-        <div className="group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ">
-          <BsChevronCompactRight onClick={nextSlide} size={30} />
+          {/* Right Arrow */}
+          <div className="group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ">
+            <BsChevronCompactRight onClick={nextSlide} size={30} />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
-/*
 
-backgroundImage: `url(${slides[currentIndex].src})`,
-*/
