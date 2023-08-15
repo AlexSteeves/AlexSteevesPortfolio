@@ -11,16 +11,13 @@ export default function App() {
   return (
     <main className="text-gray-400 bg-gray-900 snap-y snap-mandatory overscroll-y-none overflow-scroll h-screen w-screen  ">
 
-      
-      
-
       <section className = "fixed h-1/8 w-screen z-10">
         <Navbar className = ""/>
 
       </section>
 
       <section className="h-screen w-screen snap-start snap-always z-1">
-        <About className="" />
+        <About />
       </section>
 
       <section className="h-screen w-screen snap-start snap-always z-1">

@@ -37,12 +37,13 @@ export default function Carousel() {
 
   return (
     <section className="w-fit mx-auto rounded-xl border-gray-900 ">
-      <div className="w-50% h-fit group">
-        <div className="relative overflow-hidden">
+      <div className="w-50% h-[60vh] mg:h-[60vh] group">
+
+        <div className="relative overflow-hidden rounded-xl drop-shadow-lg">
           <img
             src={projects[currentIndex].image}
             alt="gallery"
-            className="h-96 w-full object-cover"
+            className="h-96 w-full object-cover max-h-[50vh] md:max-h-[60vh] lg:max-h-[70vh] transition-all duration-500"
           />
           <a href={projects[currentIndex].link}>
             <div className="absolute h-full w-full bg-gray-900 flex flex-col items-center justify-center group-hover:bottom-0 group-hover:opacity-95 opacity-0 transition-all duration-500 text-center">
@@ -52,7 +53,7 @@ export default function Carousel() {
               <h1 className="title-font text-lg font-medium text-white mb-3">
                 {projects[currentIndex].title}
               </h1>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed mx-4">
                 {projects[currentIndex].description}
               </p>
             </div>
