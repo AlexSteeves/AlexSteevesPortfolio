@@ -15,6 +15,12 @@ module.exports = {
           100: "#00aba9",
           200: "#00ece9"
         },
+        scheme: {
+          purple: "#4a29d4",
+          text: "#FFFFFF",
+          red: "#d4295d",
+          green: "#29d49f",
+        },
 
       },
     },

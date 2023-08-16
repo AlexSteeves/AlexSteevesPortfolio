@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
   
-      className="bg-gray-900 h-screen flex items-center justify-center"
+      className="bg-white h-screen flex items-center justify-center"
     >
       <div className=" bg-gray-700 rounded-md  box-border flex  items-center justify-center drop-shadow-xl">
         <div className="w-5/6 container mx-auto px-10 py-20 md:flex-row flex-col items-center justify-center text-center">

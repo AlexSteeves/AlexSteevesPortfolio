@@ -5,11 +5,11 @@ import Carousel from './Carousel';
 
 export default function Projects() {
   return (
-    <section id="projects" className="text-gray-800 flex flex-col bg-gray-900 body-font w-screen h-screen items-center justify-center">
+    <section id="projects" className="text-scheme-text flex flex-col bg-scheme-purple body-font w-screen h-screen items-center justify-center">
       <div className="container pt-52 px-5 md:py-5 mx-auto text-center lg:px-40 items-center justify-center">
         <div className="flex flex-col w-full">
-          <CodeIcon className="mx-auto inline-block w-10" />
-          <h1 className=" text-3xl font-medium title-font text-bg-800">
+          <CodeIcon className="mx-auto inline-block w-10 drop-shadow-xl" />
+          <h1 className=" text-3xl font-medium title-font text-bg-800 drop-shadow-lg">
             Personal Projects
           </h1>
         </div>

@@ -41,7 +41,7 @@ const Navbar = () => {
     <>
     <div className = "absolute inset-y-0 left-0 ">
         <a href = "#about">
-        <h1 className = "text-3xl shadow-drop-xl mt-8 ml-12 text-bold text-grey-100 hover:text-gray-100 transition-all duration-500"
+        <h1 className = "text-3xl shadow-drop-xl mt-8 ml-12 text-bold text-white hover:text-gray-100 transition-all duration-500"
         >
 
             Alex Steeves

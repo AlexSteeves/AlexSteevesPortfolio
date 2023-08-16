@@ -1,11 +1,11 @@
-import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
+import {  ChipIcon } from "@heroicons/react/solid";
 
 import React from "react";
 import { skills } from "../data";
 
 export default function Skills() {
   return (
-    <section id="skills" className = "h-screen w-screen items-center justify-center flex">
+    <section id="skills" className = "h-screen w-screen items-center justify-center flex bg-scheme-green">
       <div className="container px-5 py-10 mx-auto items-center justify-center">
         <div className="text-center mb-5">
           <ChipIcon className="w-10 inline-block mb-4" />
@@ -16,7 +16,7 @@ export default function Skills() {
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           {skills.map((skill) => (
             <div key={skill} className="p-2 w-1/2  tx-lg ">
-              <div className="bg-gray-700 rounded flex p-4 h-full items-center">
+              <div className="bg-scheme-purple rounded flex p-4 h-full items-center">
                 <span className="title-font font-medium text-white mr-2 ">
                   {" "}
                   {skill.symbol}
