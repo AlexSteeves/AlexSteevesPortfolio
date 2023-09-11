@@ -36,17 +36,17 @@ export default function Carousel() {
   };
 
   return (
-    <section className="w-fit mx-auto rounded-xl border-gray-900 ">
-      <div className="w-50% h-[60vh] mg:h-[60vh] group">
+    <section className="w-50% h-[30vh] md:h-[60vh] mx-auto rounded-xl border-gray-900 group ">
+     
 
-        <div className="relative overflow-hidden rounded-xl drop-shadow-lg">
+        <div className="relative overflow-hidden rounded-xl drop-shadow-lg m-8 md:m-auto">
           <img
             src={projects[currentIndex].image}
             alt="gallery"
             className="h-96 w-full object-cover max-h-[50vh] md:max-h-[60vh] lg:max-h-[70vh] transition-all duration-500"
           />
           <a href={projects[currentIndex].link}>
-            <div className="absolute h-full w-full bg-gray-900 flex flex-col items-center justify-center group-hover:bottom-0 group-hover:opacity-95 opacity-0 transition-all duration-500 text-center">
+            <div className="absolute h-full w-full bg-gray-900 flex flex-col items-center justify-center group-hover:bottom-0 group-hover:opacity-95 opacity-0 transition-all duration-300 text-center">
               <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                 {projects[currentIndex].subtitle}
               </h2>
@@ -68,7 +68,7 @@ export default function Carousel() {
             <BsChevronCompactRight onClick={nextSlide} size={30} />
           </div>
         </div>
-      </div>
+   
     </section>
   );
 }

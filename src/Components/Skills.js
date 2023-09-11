@@ -5,7 +5,7 @@ import { skills } from "../data";
 
 export default function Skills() {
   return (
-    <section id="skills" className = "h-screen w-screen items-center justify-center flex">
+    <section id="skills" className = "h-screen w-screen items-center justify-center flex bg-slate-800">
       <div className="container px-5 py-10 mx-auto items-center justify-center">
         <div className="text-center mb-5">
           <ChipIcon className="w-10 inline-block mb-4" />

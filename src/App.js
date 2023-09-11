@@ -9,28 +9,28 @@ import Footer from "./Components/Footer";
 
 export default function App() {
   return (
-    <main className="text-gray-400 bg-gray-900 snap-y snap-mandatory overscroll-y-none overflow-scroll h-screen w-screen  ">
+    <main className="text-gray-400 bg-gray-900 overscroll-y-none overflow-scroll h-screen w-screen  ">
 
       <section className = "fixed h-1/8 w-screen z-10">
         <Navbar className = ""/>
 
       </section>
 
-      <section className="h-screen w-screen snap-start snap-always z-1">
+      <section className="h-screen w-screen  z-1">
         <About />
       </section>
 
-      <section className="h-screen w-screen snap-start snap-always z-1">
+      <section className="h-screen w-screen  z-1">
         <Projects />
       </section>
 
-      <section className="h-screen w-screen snap-start snap-always">
+      <section className="h-screen w-screen">
         <Skills />
        
       </section>
 
 
-      <section className="h-1/8 w-screen snap-end snap-always">
+      <section className="h-1/8 w-screen ">
         <Footer />
       </section>
 
